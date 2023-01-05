@@ -35,7 +35,7 @@ public class TestMethodSource {
         );
     }
 
-    @MethodSource
+    @MethodSource("dnsSearch")
     @ParameterizedTest(name = "Отображение списка фильтров {1} " + ", на странице {0}")
     @Tag("BLOCKER")
     void dnsMeSourceTest(String category, List<String> filter){
